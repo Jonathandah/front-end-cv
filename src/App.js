@@ -4,13 +4,23 @@ import { Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 import Other from "./components/Other";
+import MaterialIcon, { colorPalette } from "material-icons-react";
 
 function App() {
   return (
     <Router>
+      <link
+        href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap"
+        rel="stylesheet"
+      />
       <div className="App">
         <header className="App__header">
-          <div className="App__header__handle"></div>
+          <h1 className="App__header__title">Jonathan Dahnberg</h1>
+          <MaterialIcon
+            icon="accessibility_new"
+            size={500}
+            color="white"
+          ></MaterialIcon>
         </header>
         <main className="App__main">
           <Route exact path="/" component={Home} />
