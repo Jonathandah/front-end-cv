@@ -9,12 +9,17 @@
 }
 
 .App__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   height: 85%;
-  background: #de3939a3;
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
 }
 
 .App__header__title {
+  width: 45%;
   font-size: 60px;
   padding-top: 7%;
   padding-left: 2%;
@@ -22,5 +27,13 @@
   color: aliceblue;
 }
 
-.App__header__symbol {
+.App__header__logo {
+  padding-top: 14%;
+  padding-right: 5%;
+  width: 40%;
+}
+
+.App__main {
+  height: 100%;
+  width: 100%;
 }
