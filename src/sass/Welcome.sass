@@ -1,0 +1,59 @@
+.Welcome
+  position: relative
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  overflow-x: hidden
+  animation-name: fadeOut
+  animation-duration: 3s
+  animation-delay: 10s
+  animation-timing-function: ease-in
+  animation-fill-mode: forwards
+  @keyframes fadeOut
+    from
+      opacity: 1
+    to
+      opacity: 0
+
+  .Welcome__box
+    position: absolute
+    top: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    animation-name: topToBottom
+    animation-duration: 4s
+    @keyframes topToBottom
+      from
+        top: -20%
+      to
+        top: 50%
+    .Welcome__box__title
+      position: relative
+    .Welcome__box__line
+      border-bottom: 1px solid black
+      position: relative
+      animation-name: expand
+      animation-delay: 3.3s
+      animation-duration: 10s
+      animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      animation-fill-mode: forwards
+      @keyframes expand
+        0%
+          width: 0vh
+        50%
+          width: 50vh
+
+        100%
+          width: 0vh
+
+
+
+
+
+
+
